@@ -3,7 +3,7 @@ package com.seocodes.NinjasSignUp;
 import jakarta.persistence.*;
 
 //Entity transforma uma classe em uma entidade do DB
-//JPA = JAva Persistence API
+//JPA = Java Persistence API
 @Entity
 @Table(name="tb_signup")
 public class NinjaModel {
@@ -12,7 +12,7 @@ public class NinjaModel {
     private Long id;
     private String nome;
     private String email;
-    int idade;
+    private int idade;
 
     public NinjaModel(){}
 
