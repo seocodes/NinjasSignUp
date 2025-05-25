@@ -9,9 +9,9 @@ import jakarta.persistence.*;
 public class NinjaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    String nome;
-    String email;
+    private Long id;
+    private String nome;
+    private String email;
     int idade;
 
     public NinjaModel(){}
