@@ -1,6 +1,9 @@
-package com.seocodes.NinjasSignUp;
+package com.seocodes.NinjasSignUp.Ninjas;
 
+import com.seocodes.NinjasSignUp.Missions.MissionModel;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 //Entity transforma uma classe em uma entidade do DB
 //JPA = Java Persistence API
@@ -13,6 +16,7 @@ public class NinjaModel {
     private String nome;
     private String email;
     private int idade;
+    private List<MissionModel> missions;
 
     public NinjaModel(){}
 
