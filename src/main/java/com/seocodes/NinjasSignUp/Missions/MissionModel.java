@@ -3,6 +3,8 @@ package com.seocodes.NinjasSignUp.Missions;
 import com.seocodes.NinjasSignUp.Ninjas.NinjaModel;
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name="tb_mission")
 public class MissionModel {
@@ -11,7 +13,10 @@ public class MissionModel {
     private Long id;
     private String nome;
     private String dificuldade;
-    private NinjaModel ninja;
+
+    //@OneToMany - uma missão pode ter vários ninjas
+    @OneToMany(mappedBy = "missions")
+    private List<NinjaModel> ninjas;
 
     public MissionModel(){}
 
